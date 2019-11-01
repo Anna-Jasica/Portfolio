@@ -6,6 +6,14 @@
   background-color: #8d8d8b;
 }
 
+.greenBorder {
+  border: 5px solid #a2b521;
+}
+
+.silverBorder {
+  border: 5px solid #8d8d8b;
+}
+
 h1 {
   font-family: "Courgette", cursive;
   font-size: 1.4rem;
@@ -25,7 +33,6 @@ p {
 
 #container {
   background-color: #8d8d8b;
-  border: 5px solid #a2b521;
 }
 
 #banner {
@@ -37,11 +44,12 @@ p {
   overflow: hidden;
 }
 
-#banner img {
+.photoInBanner {
   height: 100%;
 }
 
-#banner .greeting {
+
+.greeting {
   flex-shrink: 0;
 }
 
@@ -53,7 +61,7 @@ p {
   bottom: 10rem;
 }
 
-#banner img#photoAboveBanner {
+#photoAboveBanner {
   position: absolute;
   width: 25rem;
   height: auto;
@@ -65,12 +73,12 @@ p {
 }
 
 @media only screen and (min-width: 1216px) {
-  #banner img#photoAboveBanner {
+  #photoAboveBanner {
     display: initial;
   }
 }
 
-div#main {
+#main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
@@ -95,7 +103,6 @@ nav a.menu {
   font-family: "Courgette", cursive;
   font-size: 1.8rem;
   text-align: center;
-  border: 5px solid #8d8d8b;
   border-right: 2.5px;
   background-color: #a2b521;
 }
@@ -104,44 +111,38 @@ nav a:last-child {
   border-right: none;
 }
 
-div#main #graphicDetails {
+#graphicDetails {
   grid-row: 1 / 9;
   grid-column: 2 / 3;
-  border: 5px solid #8d8d8b;
 }
 
-div#main #graphicDetails img {
+#graphicDetails img {
   width: 100%;
-  border: 5px solid #a2b521;
 }
 
-div#main #aboutMe {
+#aboutMe {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
-  border: 5px solid #a2b521;
   justify-content: center;
   margin-left: 5px;
   padding-bottom: 0.8rem;
+  margin-bottom: 5px;
 }
 
-div#main #skills {
+#skills {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
-  border: 5px solid #a2b521;
   margin-left: 5px;
 }
 
-div#main #skills #skillsImg {
-  display: flex;
+#skillsImg {
+  text-align: center;
   padding-bottom: 0.8rem;
-  justify-content: center;
-  width: 70%;
 }
 
-div#main #skills #skillsImg img {
-  width: 70%;
-  overflow: hidden;
-  border: 5px solid #a2b521;
+#skillsImg img {
+  width: 20%;
+  margin: 2.5px;
 }
 
 footer {

@@ -6,9 +6,16 @@
     background-color: #8d8d8b;
 }
 
+.greenBorder {
+    border: 5px solid #a2b521;
+}
+
+.silverBorder {
+    border: 5px solid #8d8d8b;
+}
+
 #container {
     background-color: #8d8d8b;
-    border: 5px solid #A2B521;
 }
 
 #banner {
@@ -20,11 +27,11 @@
     overflow: hidden;
 }
 
-#banner img {
+.photoInBanner {
     height: 100%;
 }
 
-#banner .greeting {
+.greeting {
     flex-shrink: 0;
 }
 
@@ -36,7 +43,7 @@
     bottom: 10rem;
 }
 
-#banner img#photoAboveBanner {
+#photoAboveBanner {
     position: absolute;
     width: 25rem;
     height: auto;
@@ -48,13 +55,12 @@
 }
 
 @media only screen and (min-width: 1216px) {
-    #banner img#photoAboveBanner {
+    #photoAboveBanner {
         display: initial;
     }
 }
 
-
-div#menu {
+#menu {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: #8d8d8b;
@@ -62,17 +68,16 @@ div#menu {
     border-top: 5px solid #A2B521;
 }
 
-div.detailsSentence {
+.detailsSentence {
     height: 100%;
     width: 100%;
     font-family: 'Courgette', cursive;
     display: grid;
     align-items: center;
     background-color: #A2B521;
-    border: 5px solid #8d8d8b;
 }
 
-div.detailsSentence a {
+.detailsSentence a {
     text-decoration: none;
     color: #000000;
     font-size: 1.8rem;
@@ -81,17 +86,15 @@ div.detailsSentence a {
     background-color: #A2B521;
 }
 
-div#menu #detailsPhoto {
+#detailsPhoto {
     overflow: hidden;
     height: 100%;
-    border: 5px solid #8d8d8b;
     display: flex;
 }
 
-div#menu #detailsPhoto img {
+#detailsPhoto img {
     height: 100%;
     overflow: hidden;
-    border: 5px solid #A2B521;
     width: 100%;
     height: 100%;
 }
