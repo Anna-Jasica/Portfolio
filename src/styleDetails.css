@@ -73,7 +73,7 @@ p {
 div#main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-gap: 5px;
   background-color: #8d8d8b;
   border-top: 5px solid #a2b521;
@@ -121,14 +121,27 @@ div#main #aboutMe {
   border: 5px solid #a2b521;
   justify-content: center;
   margin-left: 5px;
+  padding-bottom: 0.8rem;
 }
 
 div#main #skills {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   border: 5px solid #a2b521;
-  justify-content: center;
   margin-left: 5px;
+}
+
+div#main #skills #skillsImg {
+  display: flex;
+  padding-bottom: 0.8rem;
+  justify-content: center;
+  width: 70%;
+}
+
+div#main #skills #skillsImg img {
+  width: 70%;
+  overflow: hidden;
+  border: 5px solid #a2b521;
 }
 
 footer {
