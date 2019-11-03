@@ -14,13 +14,9 @@
     border: 5px solid #8d8d8b;
 }
 
-#container {
-    background-color: #8d8d8b;
-}
 
-#banner {
+.banner {
     height: 25rem;
-    background-color: #8d8d8b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +39,7 @@
     bottom: 10rem;
 }
 
-#photoAboveBanner {
+.photoAboveGreeting {
     position: absolute;
     width: 25rem;
     height: auto;
@@ -54,18 +50,31 @@
     display: none;
 }
 
+.bannerFull {
+    display: none;
+}
+
 @media only screen and (min-width: 1216px) {
-    #photoAboveBanner {
+    .photoAboveGreeting {
         display: initial;
     }
 }
 
-#menu {
+@media only screen and (min-width: 971px) {
+    .bannerFull {
+        display: initial;
+    }
+}
+
+.main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #8d8d8b;
     height: 7rem;
     border-top: 5px solid #A2B521;
+}
+
+.details {
+    grid-row: 1 / 2;
 }
 
 .detailsSentence {
@@ -81,17 +90,17 @@
 
 .details a {
     text-decoration: none;
-    color: #000000;
+    color: #010101;
 }
 
-#detailsPhoto {
+.detailsPhoto {
     overflow: hidden;
     height: 100%;
     display: flex;
+    grid-row: 1 / 2;
 }
 
-#detailsPhoto img {
-    height: 100%;
+.detailsPhoto img {
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -100,4 +109,7 @@
 footer {
     text-align: center;
     font-size: 0.7rem;
+    grid-row: 2 / 3;
+    margin-left: 5px;
+    font-family: "Source Sans Pro", sans-serif;
 }

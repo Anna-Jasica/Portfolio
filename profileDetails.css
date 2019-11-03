@@ -4,6 +4,7 @@
   font-size: 18px;
   box-sizing: border-box;
   background-color: #8d8d8b;
+  width: auto;
 }
 
 .greenBorder {
@@ -35,13 +36,8 @@ p {
   margin-right: auto;
 }
 
-#container {
-  background-color: #8d8d8b;
-}
-
-#banner {
+.banner {
   height: 25rem;
-  background-color: #8d8d8b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +60,7 @@ p {
   bottom: 10rem;
 }
 
-#photoAboveBanner {
+.photoAboveGreeting {
   position: absolute;
   width: 25rem;
   height: auto;
@@ -75,18 +71,27 @@ p {
   display: none;
 }
 
+.bannerFull {
+  display: none;
+}
+
 @media only screen and (min-width: 1216px) {
-  #photoAboveBanner {
+  .photoAboveGreeting {
     display: initial;
   }
 }
 
-#main {
+@media only screen and (min-width: 971px) {
+  .bannerFull {
+    display: initial;
+  }
+}
+
+.main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5px;
-  background-color: #8d8d8b;
   border-top: 5px solid #a2b521;
 }
 
@@ -96,7 +101,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #a2b521;
 }
 
 nav a.menu {
@@ -118,13 +122,12 @@ nav a:last-child {
   border-right: none;
 }
 
-#graphicDetails {
+.graphicDetails {
   grid-row: 1 / 9;
   grid-column: 2 / 3;
-
 }
 
-#graphicDetails img {
+.graphicDetails img {
   width: 100%;
 }
 
@@ -143,12 +146,12 @@ nav a:last-child {
   margin-left: 5px;
 }
 
-#skillsImg {
+.skillsImageContainer {
   text-align: center;
   padding-bottom: 0.8rem;
 }
 
-#skillsImg img {
+.skillsImageContainer img {
   width: 20%;
   margin: 2.5px;
 }
@@ -159,7 +162,7 @@ nav a:last-child {
   margin-left: 5px;
 }
 
-#portfolioImg {
+.portfolioImageContainer {
   text-align: center;
   padding-bottom: 0.8rem;
 }
@@ -169,12 +172,12 @@ nav a:last-child {
   position: relative;
 }
 
-#portfolioImg .photo {
+.photo {
   width: 20%;
   margin: 2.5px;
 }
 
-#portfolioImg .photo:hover {
+.photo:hover {
   position: relative;
   animation-name: animation;
   animation-duration: 2s;
@@ -208,10 +211,8 @@ nav a:last-child {
 .form label {
   display: block;
   padding: 0.5rem;
-}
-
-.inputContact {
   margin-bottom: 5px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .submit {
@@ -223,5 +224,8 @@ nav a:last-child {
 footer {
   text-align: center;
   font-size: 0.7rem;
-  margin: 5px;
+  grid-row: 6 / 7;
+  grid-column: 1 / 2;
+  margin-left: 5px;
+  font-family: "Source Sans Pro", sans-serif;
 }
